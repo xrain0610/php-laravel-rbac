@@ -63,30 +63,6 @@ class AdminPermissionTableSeeder extends Seeder {
         \Pianke\Models\AdminPermission::create(['desc'=>'admin.role_edit_desc','id'=>8,'pid'=>1,'sort'=>7,'menu'=>0,'name'=>'admin.role_edit','route'=>'\Pianke\Http\Controllers\AdminManagerController@getRoleedit|\Pianke\Http\Controllers\AdminManagerController@postRoleedit']);
         \Pianke\Models\AdminPermission::create(['desc'=>'admin.role_delete_desc','id'=>9,'pid'=>1,'sort'=>8,'menu'=>0,'name'=>'admin.role_delete','route'=>'\Pianke\Http\Controllers\AdminManagerController@getRoledel']);
         \Pianke\Models\AdminPermission::create(['desc'=>'admin.permission_manage_desc','id'=>10,'pid'=>1,'sort'=>9,'name'=>'admin.permission_manage','route'=>'\Pianke\Http\Controllers\AdminManagerController@getPermission|\Pianke\Http\Controllers\AdminManagerController@getPeract|\Pianke\Http\Controllers\AdminManagerController@getPermenu']);
-        //静静管理菜单
-        \Pianke\Models\AdminPermission::create(['desc'=>'admin.jing_manage_desc','id'=>11,'pid'=>0,'sort'=>1,'name'=>'admin.jing_manage','route'=>'fa fa-pagelines']);
-        \Pianke\Models\AdminPermission::create(['desc'=>'admin.jing_add_desc','id'=>12,'pid'=>11,'sort'=>2,'name'=>'admin.jing_add','route'=>'\Pianke\Http\Controllers\AdminJingController@getAdd|\Pianke\Http\Controllers\AdminJingController@postAdd']);
-        \Pianke\Models\AdminPermission::create(['desc'=>'admin.jing_push_desc','id'=>13,'pid'=>11,'sort'=>4,'menu'=>0,'name'=>'admin.jing_push','route'=>'\Pianke\Http\Controllers\AdminJingController@getPush']);
-        \Pianke\Models\AdminPermission::create(['desc'=>'admin.jing_edit_desc','id'=>14,'pid'=>11,'sort'=>3,'menu'=>0,'name'=>'admin.jing_edit','route'=>'\Pianke\Http\Controllers\AdminJingController@getEdit|\Pianke\Http\Controllers\AdminJingController@postEdit']);
-        \Pianke\Models\AdminPermission::create(['desc'=>'admin.jing_del_desc','id'=>15,'pid'=>11,'sort'=>5,'menu'=>0,'name'=>'admin.jing_del','route'=>'\Pianke\Http\Controllers\AdminJingController@getDel']);
-        \Pianke\Models\AdminPermission::create(['desc'=>'admin.jing_list_desc','id'=>16,'pid'=>11,'sort'=>1,'name'=>'admin.jing_list','route'=>'\Pianke\Http\Controllers\AdminJingController@getList']);
-        \Pianke\Models\AdminPermission::create(['desc'=>'admin.jing_status_desc','id'=>17,'pid'=>11,'sort'=>6,'menu'=>0,'name'=>'admin.jing_status','route'=>'\Pianke\Http\Controllers\AdminJingController@getStatus']);
-        //推广下载菜单
-        \Pianke\Models\AdminPermission::create(['desc'=>'admin.link_manage_desc','id'=>18,'pid'=>0,'sort'=>3,'name'=>'admin.link_manage','route'=>'fa fa-share-alt']);
-        \Pianke\Models\AdminPermission::create(['desc'=>'admin.link_list_desc','id'=>19,'pid'=>18,'sort'=>1,'name'=>'admin.link_list','route'=>'\Pianke\Http\Controllers\AdminDownloadController@getList']);
-        \Pianke\Models\AdminPermission::create(['desc'=>'admin.link_add_desc','id'=>20,'pid'=>18,'sort'=>2,'menu'=>0,'name'=>'admin.link_add','route'=>'\Pianke\Http\Controllers\AdminDownloadController@getAdd|\Pianke\Http\Controllers\AdminDownloadController@postAdd']);
-        \Pianke\Models\AdminPermission::create(['desc'=>'admin.link_del_desc','id'=>21,'pid'=>18,'sort'=>3,'menu'=>0,'name'=>'admin.link_del','route'=>'\Pianke\Http\Controllers\AdminDownloadController@getDel']);
-        \Pianke\Models\AdminPermission::create(['desc'=>'admin.link_counter_desc','id'=>22,'pid'=>18,'sort'=>5,'menu'=>0,'name'=>'admin.link_counter','route'=>'\Pianke\Http\Controllers\AdminDownloadController@getCounter']);
-        //辅助工具
-        \Pianke\Models\AdminPermission::create(['desc'=>'admin.helper_desc','id'=>23,'pid'=>0,'sort'=>4,'name'=>'admin.helper','route'=>'fa fa-magic']);
-        \Pianke\Models\AdminPermission::create(['desc'=>'admin.filehelper_desc','id'=>24,'pid'=>23,'sort'=>1,'name'=>'admin.filehelper','route'=>'\Pianke\Http\Controllers\AdminHelperController@getUpload|\Pianke\Http\Controllers\AdminHelperController@postUpload']);
-        //通行证管理
-        \Pianke\Models\AdminPermission::create(['desc'=>'admin.passport_admin_desc','id'=>25,'pid'=>0,'sort'=>2,'name'=>'admin.passport_admin','route'=>'fa fa-user']);
-        \Pianke\Models\AdminPermission::create(['desc'=>'admin.passport_list_desc','id'=>26,'pid'=>25,'sort'=>1,'name'=>'admin.passport_list','route'=>'\Pianke\Http\Controllers\AdminPassportController@getList']);
-        \Pianke\Models\AdminPermission::create(['desc'=>'admin.passport_count_desc','id'=>27,'pid'=>25,'sort'=>2,'name'=>'admin.passport_count','route'=>'\Pianke\Http\Controllers\AdminPassportController@getCount']);
-        \Pianke\Models\AdminPermission::create(['desc'=>'admin.passport_info_desc','id'=>28,'pid'=>25,'sort'=>3,'menu'=>0,'name'=>'admin.passport_info','route'=>'\Pianke\Http\Controllers\AdminPassportController@getInfo']);
-        \Pianke\Models\AdminPermission::create(['desc'=>'admin.passport_edit_desc','id'=>29,'pid'=>25,'sort'=>4,'menu'=>0,'name'=>'admin.passport_edit','route'=>'\Pianke\Http\Controllers\AdminPassportController@getEdit|\Pianke\Http\Controllers\AdminPassportController@postEdit']);
-        \Pianke\Models\AdminPermission::create(['desc'=>'admin.passport_status_desc','id'=>30,'pid'=>25,'sort'=>5,'menu'=>0,'name'=>'admin.passport_status','route'=>'\Pianke\Http\Controllers\AdminPassportController@getStatus']);
     }
 
 }
